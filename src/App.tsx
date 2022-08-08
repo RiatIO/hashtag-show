@@ -15,11 +15,12 @@ function App() {
 
     console.log("TEST", authResponse.accessToken);
 
+    /*
     axios
       .get(
         `https://graph.facebook.com/v14.0/ig_hashtag_search?user_id=17841431906599136&q=deepdipreet&access_token=${authResponse.accessToken}`
       )
-      .then(console.log);
+      .then(console.log);*/
 
     axios
       .get(
@@ -32,7 +33,7 @@ function App() {
 
   useEffect(() => {
     console.log("here");
-    //const accessToken = login();
+    const accessToken = login();
 
     /*
     window.FB.api(
